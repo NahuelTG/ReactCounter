@@ -5,9 +5,6 @@ import "./App.css";
 
 function App() {
   const [count, setCount] = useState(0);
-  const [sum, setSum] = useState(0);
-  const [rest, setRest] = useState(0);
-  const [reset, setReset] = useState(0);
 
   return (
     <>
