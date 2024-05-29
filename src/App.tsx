@@ -5,6 +5,9 @@ import "./App.css";
 
 function App() {
   const [count, setCount] = useState(0);
+  const [sum, setSum] = useState(0);
+  const [rest, setRest] = useState(0);
+  const [reset, setReset] = useState(0);
 
   return (
     <>
@@ -17,10 +20,12 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
+      <h1>{count}</h1>
+
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+        <button onClick={() => setCount((count) => count + 1)}>Sumar</button>
+        <button onClick={() => setCount((count) => count - 1)}>Restar</button>
+        <button onClick={() => setCount(0)}>Reset </button>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
